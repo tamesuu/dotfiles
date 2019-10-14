@@ -4,11 +4,11 @@
 " BASIC SETTING {{{
 " ----------------------------------------------------------------
 syntax on           " 構文ごとに色分け
-set number			" indicate line number
-set tabstop=2		" tabサイズ
+set number          " indicate line number
+set tabstop=2       " tabサイズ
 set expandtab       " タブをスペースに展開しない (expandtab:展開する)
 set shiftwidth=2
-"set autoindent      " インデントを現在行と同一化
+"set autoindent     " インデントを現在行と同一化
 set smartindent     " 新しい行は自動インデント
 set fileformat=unix " 改行コード
 set fileformats=unix,dos
