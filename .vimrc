@@ -5,14 +5,14 @@
 " ----------------------------------------------------------------
 syntax on           " 構文ごとに色分け
 set number			" indicate line number
-set tabstop=4		" tabサイズ
+set tabstop=2		" tabサイズ
 set expandtab       " タブをスペースに展開しない (expandtab:展開する)
-set shiftwidth=4
+set shiftwidth=2
 "set autoindent      " インデントを現在行と同一化
 set smartindent     " 新しい行は自動インデント
 set fileformat=unix " 改行コード
 set fileformats=unix,dos
-set hlsearch        " highlight of searched result 
+set hlsearch        " highlight of searched result
 set noswapfile      " swapを作らない
 set directory=~/.vim/tmp  " swap files
 
@@ -37,22 +37,27 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 call neobundle#end()
 
-NeoBundle 'Shougo/neocomplcache' 
-""NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'nanotech/jellybeans.vim'
 
-"NeoBundle 'tyru/open-browser.vim'
-"NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
+NeoBundle 'kannokanno/previm'
+
+" scala用syntax highlight
+NeoBundle 'derekwyatt/vim-scala'
+
+NeoBundle 'thinca/vim-quickrun'
 
 colorscheme jellybeans
 filetype plugin indent on     " Required!
 
 " Previm
-"let g:previm_open_cmd = ''
-"nnoremap [previm] <Nop>
-"nmap <Space>p [previm]
-"nnoremap <silent> [previm]o :<C-u>PrevimOpen<CR>
-"nnoremap <silent> [previm]r :call previm#refresh()<CR>
+let g:previm_open_cmd = ''
+nnoremap [previm] <Nop>
+nmap <Space>p [previm]
+nnoremap <silent> [previm]o :<C-u>PrevimOpen<CR>
+nnoremap <silent> [previm]r :call previm#refresh()<CR>
 "
 " Installation check.
 if neobundle#exists_not_installed_bundles()
