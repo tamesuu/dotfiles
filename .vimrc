@@ -86,4 +86,5 @@ noremap <esc><esc> :nohlsearch<CR><esc>
 "autocmd BufWritePost *.php call PHPLint()
 autocmd BufNewFile,BufRead *.twig set filetype=php
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+autocmd BufNewFile,BufRead *.vue set filetype=html
 " }}}

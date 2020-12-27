@@ -15,6 +15,7 @@ alias gs='git status'
 alias gc='git commit'
 alias ga='git add'
 alias gac='git commit -a'
+alias tmuxg='tmux new-session \; source-file ~/.tmux.session.conf'
 
 #
 alias mvim='open -a /Applications/MacVim.app "$@"'
@@ -31,5 +32,14 @@ export PATH="/anaconda3/bin:$PATH"
 export EDITOR='vim'
 
 export NODE_PATH=`npm root -g`
+export PATH=~/.npm-global/bin:$PATH
 
 export PATH=~/.local/bin:$PATH
+. /anaconda3/etc/profile.d/conda.sh
+
+ssh-add -K ~/.ssh/id_rsa
+
+
+# for k8s
+alias k=kubectl
+# complete -F __start_kubectl k
