@@ -1,4 +1,5 @@
-export JAVA_HOME=$(/usr/libexec/java_home)
+### export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export JDK_HOME=$(/usr/libexec/java_home)
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
@@ -43,3 +44,4 @@ ssh-add -K ~/.ssh/id_rsa
 # for k8s
 alias k=kubectl
 # complete -F __start_kubectl k
+export PATH="/usr/local/opt/mongodb-community@4.4/bin:$PATH"

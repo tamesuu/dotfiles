@@ -47,7 +47,19 @@ NeoBundle 'kannokanno/previm'
 " scala用syntax highlight
 NeoBundle 'derekwyatt/vim-scala'
 
+" .slim
+NeoBundle 'slim-template/vim-slim'
+
+" .tsx
+NeoBundle 'leafgarland/typescript-vim'
+" インデントされないので入れた
+" http://qiita.com/raamen/items/2d6aaf0bc98cb52e9a07
+NeoBundle 'jason0x43/vim-js-indent'
+au BufRead,BufNewFile,BufReadPre *.ts set filetype=typescript
+autocmd FileType typescript setlocal sw=2 sts=2 ts=2 et
+
 NeoBundle 'thinca/vim-quickrun'
+
 
 colorscheme jellybeans
 filetype plugin indent on     " Required!
