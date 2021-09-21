@@ -1,6 +1,10 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
+tap "heroku/brew"
 brew "mas"
+brew "tmux"
+brew "heroku"
+brew "psql"
 
 # cask
 cask "google-chrome"
@@ -11,3 +15,6 @@ cask "macvim"
 cask "drawio"
 cask "visual-studio-code"
 cask "dash"
+cask "clipy"
+cask "alfred"
+cask "typora"
