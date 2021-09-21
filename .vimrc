@@ -35,8 +35,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 
-call neobundle#end()
-
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'editorconfig/editorconfig-vim'
 NeoBundle 'nanotech/jellybeans.vim'
@@ -55,11 +53,11 @@ NeoBundle 'leafgarland/typescript-vim'
 " インデントされないので入れた
 " http://qiita.com/raamen/items/2d6aaf0bc98cb52e9a07
 NeoBundle 'jason0x43/vim-js-indent'
+NeoBundle 'thinca/vim-quickrun'
+call neobundle#end()
+
 au BufRead,BufNewFile,BufReadPre *.ts set filetype=typescript
 autocmd FileType typescript setlocal sw=2 sts=2 ts=2 et
-
-NeoBundle 'thinca/vim-quickrun'
-
 
 colorscheme jellybeans
 filetype plugin indent on     " Required!
@@ -99,4 +97,6 @@ noremap <esc><esc> :nohlsearch<CR><esc>
 autocmd BufNewFile,BufRead *.twig set filetype=php
 autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 autocmd BufNewFile,BufRead *.vue set filetype=html
+" 空白削除
+autocmd BufWritePre * :%s/\s\+$//e
 " }}}
