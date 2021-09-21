@@ -4,7 +4,7 @@ tap "heroku/brew"
 brew "mas"
 brew "tmux"
 brew "heroku"
-brew "psql"
+brew "postgresql"
 
 # cask
 cask "google-chrome"
