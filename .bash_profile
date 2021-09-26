@@ -18,6 +18,8 @@ alias ga='git add'
 alias gac='git commit -a'
 alias tmuxg='tmux new-session \; source-file ~/.tmux.session.conf'
 
+alias mux='tmuxinator'
+
 #
 alias mvim='open -a /Applications/MacVim.app "$@"'
 
@@ -27,8 +29,8 @@ export PATH=$PATH:~/play-2.2.1
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# added by Anaconda3 5.0.0 installer
-export PATH="/anaconda3/bin:$PATH"
+### # added by Anaconda3 5.0.0 installer
+### export PATH="/anaconda3/bin:$PATH"
 
 export EDITOR='vim'
 
