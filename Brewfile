@@ -5,6 +5,8 @@ brew "mas"
 brew "tmux"
 brew "heroku"
 brew "postgresql"
+brew "java"
+brew "graphviz"
 
 # cask
 cask "google-chrome"
@@ -19,3 +21,4 @@ cask "clipy"
 cask "alfred"
 cask "typora"
 cask "skitch"
+cask "xmind"
