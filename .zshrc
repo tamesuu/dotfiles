@@ -17,3 +17,8 @@ PROMPT='
 # java
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
+eval "$(nodenv init -)"
+eval "$(anyenv init -)" $ exec /bin/zsh -l
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

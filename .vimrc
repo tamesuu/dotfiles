@@ -60,6 +60,7 @@ au BufRead,BufNewFile,BufReadPre *.ts set filetype=typescript
 autocmd FileType typescript setlocal sw=2 sts=2 ts=2 et
 
 colorscheme jellybeans
+" colorscheme morning
 filetype plugin indent on     " Required!
 
 " Previm
