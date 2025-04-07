@@ -22,3 +22,4 @@ eval "$(nodenv init -)"
 eval "$(anyenv init -)" $ exec /bin/zsh -l
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"

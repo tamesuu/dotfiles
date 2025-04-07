@@ -1,3 +1,4 @@
+# for homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ssh-add -K ~/.ssh/id_ed25519
