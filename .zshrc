@@ -15,11 +15,24 @@ PROMPT='
 %F{yellow}$%f '
 
 # java
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+# export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
-eval "$(nodenv init -)"
-eval "$(anyenv init -)" $ exec /bin/zsh -l
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/shuhei_toyonaga/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+eval "$(anyenv init -)"
+eval "$(nodenv init -)"
+
+# java
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
